@@ -1,6 +1,15 @@
 import React from 'react';
 import './App.css';
 
+import styled from 'styled-components'
+import StarWarsCharacters from './components/StarWarsCharacters'
+
+const ContainerDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+
+
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
   // the state properties here.
@@ -12,6 +21,9 @@ const App = () => {
   return (
     <div className="App">
       <h1 className="Header">React Wars</h1>
+      <ContainerDiv>
+        <StarWarsCharacters />
+      </ContainerDiv> 
     </div>
   );
 }
